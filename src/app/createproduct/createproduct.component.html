@@ -1,0 +1,14 @@
+<form [formGroup]="productform" (ngSubmit) = "onsubmit()">
+    <label for="email">email</label>
+    <input type="text" formControlName='email'>
+    <label for="productId">productId</label>
+    <input type="number" formControlName='productId'>
+    <label for="productname">productname</label>
+    <input type="text" formControlName='productname'>
+    <button type="submit" class="btn-danger">submit</button> 
+
+
+</form>
+<pre>
+    {{productform.value|json}}
+</pre>
